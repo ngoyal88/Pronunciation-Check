@@ -279,8 +279,9 @@ if audio_path and ref_text.strip():
             col_index = i % 3
             with word_cols[col_index]:
                 st.markdown(f"**{word}**")
-                if st.button(f"🔊 Hear '{word}'", key=f"word_{word}"):
-                    st.audio(generate_pronunciation_audio(word), format="audio/mp3")
+                if st.button(f"🔊 Hear '{word}'", key=f"word_{i}"):
+                    audio = generate_pronunciation_audio(word)
+                    st.audio(audio.read(), format="audio/mp3")
 
     # Challenge mode logic
     if practice_mode == "Challenge Mode":

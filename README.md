@@ -21,8 +21,8 @@ A Streamlit web app that lets users record their speech, detects mispronounced w
 Clone this repository:
 
 ```bash
-git clone https://github.com/your-username/speech-feedback-app.git
-cd speech-feedback-app
+git clone https://github.com/ngoyal88/pronunciation-checker.git
+cd pronunciation-checker
 ```
 Install all required dependencies:
 ```bash
